@@ -2,7 +2,7 @@ const pokemonList = document.getElementById('pokemonList')
 const loadMoreButton = document.getElementById('loadMoreButton')
 
 const maxRecords = 151
-const limit = 10
+const limit = 7;
 let offset = 0;
 
 function convertPokemonToLi(pokemon) {
@@ -19,6 +19,28 @@ function convertPokemonToLi(pokemon) {
                 <img src="${pokemon.photo}"
                      alt="${pokemon.name}">
             </div>
+
+
+
+
+
+            <div class="detail">
+    <i class="detailPokemon">+ inf</i>
+<div class="text-selection">
+    <h5><i></i></h5>
+    <p>
+     <b> Species: Seed  <br>
+         Height: 2'3,6 (0.70 cm) <br>
+         Weight: 15.2 Ibs (6.9 kg)
+
+
+
+     </b>
+</p>
+</div>
+</div>
+
+
         </li>
     `
 }
